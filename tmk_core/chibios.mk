@@ -146,5 +146,7 @@ DEBUG = gdb
 # List any extra directories to look for libraries here.
 EXTRALIBDIRS = $(RULESPATH)/ld
 
+# -d 11dd:asdl - specify divice
+
 dfu-util: $(BUILD_DIR)/$(TARGET).bin sizeafter
 	dfu-util -D $(BUILD_DIR)/$(TARGET).bin
